@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A030D9D21C65501B00376AFD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030D9D11C65501B00376AFD /* Card.swift */; };
+		A030D9D31C65501B00376AFD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030D9D11C65501B00376AFD /* Card.swift */; };
 		A0B3EBF31C654E1A000AA081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3EBF21C654E1A000AA081 /* AppDelegate.swift */; };
 		A0B3EBF51C654E1A000AA081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3EBF41C654E1A000AA081 /* ViewController.swift */; };
 		A0B3EBF81C654E1A000AA081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B3EBF61C654E1A000AA081 /* Main.storyboard */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A030D9D11C65501B00376AFD /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A0B3EBEF1C654E1A000AA081 /* BJack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B3EBF21C654E1A000AA081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B3EBF41C654E1A000AA081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 				A0B3EBF91C654E1A000AA081 /* Assets.xcassets */,
 				A0B3EBFB1C654E1A000AA081 /* LaunchScreen.storyboard */,
 				A0B3EBFE1C654E1A000AA081 /* Info.plist */,
+				A030D9D11C65501B00376AFD /* Card.swift */,
 			);
 			path = BJack;
 			sourceTree = "<group>";
@@ -193,6 +197,7 @@
 				TargetAttributes = {
 					A0B3EBEE1C654E19000AA081 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 22L3K5S6HT;
 					};
 					A0B3EC021C654E1A000AA081 = {
 						CreatedOnToolsVersion = 7.1;
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B3EBF51C654E1A000AA081 /* ViewController.swift in Sources */,
+				A030D9D21C65501B00376AFD /* Card.swift in Sources */,
 				A0B3EBF31C654E1A000AA081 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B3EC081C654E1A000AA081 /* BJackTests.swift in Sources */,
+				A030D9D31C65501B00376AFD /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BJack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blake-elshire.BJack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BJack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blake-elshire.BJack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +497,7 @@
 				A0B3EC191C654E1A000AA081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0B3EC1A1C654E1A000AA081 /* Build configuration list for PBXNativeTarget "BJackTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +506,7 @@
 				A0B3EC1C1C654E1A000AA081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0B3EC1D1C654E1A000AA081 /* Build configuration list for PBXNativeTarget "BJackUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +515,7 @@
 				A0B3EC1F1C654E1A000AA081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
